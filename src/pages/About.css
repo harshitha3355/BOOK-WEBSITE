@@ -1,0 +1,71 @@
+.abt-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0  ;
+}
+
+.abt-tags {
+    font-size: 1.2rem;
+    color: #8A8888;
+    font-weight: bold;
+    font-family: Economica;
+}
+
+.abt-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #450920;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, textarea {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    border: 2px solid #450920;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+
+.contact-form input,textarea::placeholder{
+    color: #8a8888;
+}
+
+.contact-form button {
+    padding: 14px 20px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #450920;
+    border-radius: 4px;
+    font-family: Economica;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #8A8888;
+}
+
+.abt-image img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.abt-container{
+    margin:50px ;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}

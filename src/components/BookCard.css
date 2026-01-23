@@ -1,0 +1,24 @@
+.book-card {
+  width: 150px;
+  text-align: center;
+  line-height: 5px;
+}
+
+.book-img {
+  width: 100%;
+  height: 230px;
+  border-radius: 2px;
+  border: 0.01rem solid #450920;
+}
+
+.book-title {
+  font-family: 'Economica';
+  font-size: 1.2rem;
+  color: #450920;
+}
+
+.book-author {
+  color: #8a8888;
+  font-size: 1.1rem;
+  font-family: 'Economica';
+}

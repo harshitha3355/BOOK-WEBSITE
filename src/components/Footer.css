@@ -1,0 +1,69 @@
+.footer {
+    color: #450920;
+    font-size: 0.9rem;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.title-medialinks {
+    text-align: left;
+    padding: 50px;
+}
+
+.media-icons {
+    color: #8A8888;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+}
+
+.media-icons :hover{
+    color: #450920;
+    cursor:pointer;
+}
+
+.quote {
+    font-family: "Fauna One", serif;
+    max-width: 450px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.quicklinks {
+    text-align: left;
+    padding: 0 50px;
+}
+
+#heading {
+    font-family: "Economica", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#ql-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#ql-list :hover{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.05s;
+}
+
+#end-line {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,45 @@
+import React from "react";
+import './Footer.css';
+import { FaPinterest, FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
+import Line from "./Line";
+
+function Footer(){
+    return(
+        <footer className="footer">
+            <Line />
+            <div className="foot-container">
+                <div className="title-medialinks">
+                    <h1 className="site-title">Page Trail</h1>
+                    <div className="media-icons">
+                        <FaPinterest size={20}/>
+                        <FaYoutube size={20}/>
+                        <FaInstagram size={20}/>
+                        <FaLinkedin size={20}/>
+                        <SiGmail size={20}/>
+                        <FaFacebook size={20}/>
+                    </div>
+                </div>
+                <div className="quote">
+                    <quote>
+                        "Page Trail is where stories meet readers discover new releases, explore bookish insights. From fresh releases to fun challenges, Page Trail brings the magic of reading to life, one book at a time."
+                    </quote>
+                </div>
+                <div className="quicklinks">
+                    <h3 id="heading">Quick Links</h3>
+                    <ul id="ql-list">
+                        <li>About</li> 
+                        <li>Blog</li> 
+                        <li>Books</li> 
+                        <li>Fun</li> 
+                        <li>Privacy Policy</li> 
+                        <li>Terms and Conditions</li> 
+                    </ul>
+                </div>
+            </div>
+            <p id="end-line">&copy;2025 Page Trail | Terms and Conditions | Privacy Policy</p>
+        </footer>
+    )
+}
+
+export default Footer;

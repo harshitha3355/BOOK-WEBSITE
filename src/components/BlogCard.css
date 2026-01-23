@@ -1,0 +1,38 @@
+.blog-card {
+  width: 320px;
+  border: 0.1em solid #450920;
+  height: 450px;
+  border-radius: 2px;
+}
+
+.blog-img{
+    width: 100%;
+    max-height: 200px;
+    object-fit:cover;
+}
+
+.details *{
+    margin: 8px;
+    padding: 3px;
+}
+
+.blog-title {
+  font-family: 'Economica';
+  font-size: 1.8em;
+  color: #450920;
+}
+
+.blog-author {
+  color: #8a8888;
+  font-size: 1.2rem;
+  font-family: 'Economica';
+}
+
+.blog-content{
+    color: #450920;
+    font-family: "Fauna One";
+    max-height: calc(1.3em * 4); /* line-height × number of lines */
+    line-height: 1.3;  
+    overflow: hidden;
+    font-size: 0.75rem;
+}
