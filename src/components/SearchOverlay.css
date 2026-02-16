@@ -1,0 +1,49 @@
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2000;
+  font-family: "Fauna One";
+}
+
+.search-panel {
+  background: #fff;
+  padding: 20px;
+  transform: translateY(-100%);
+  animation: slideDown 0.35s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.search-panel input {
+  padding: 12px;
+  height: 3rem;
+  font-size: 1rem;
+  font-family: "Fauna One";
+  padding: 0 20px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.search-results {
+  margin-top: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0.9rem;
+}

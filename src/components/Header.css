@@ -42,14 +42,3 @@
   padding-bottom: 20px;
   cursor: pointer;
 }
-
-.search-input{
-  height: 3rem;
-  font-size: 1rem;
-  font-family: "Fauna One";
-  padding: 0 20px;
-  border-radius: 2px;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 9px;
-}
