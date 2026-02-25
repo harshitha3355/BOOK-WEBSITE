@@ -22,13 +22,13 @@
   gap: 70px;
 }
 
-.nav a {
+.nav .nav-opt {
   color: #450920;
   font-size: 0.9rem;
   text-decoration:none;
 }
 
-.nav a:hover {
+.nav .nav-opt:hover {
   transition: 0.05s;
   border-radius: 2px;
   font-weight: bold;

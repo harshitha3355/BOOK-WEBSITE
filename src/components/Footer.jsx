@@ -2,6 +2,7 @@ import React from "react";
 import './Footer.css';
 import { FaPinterest, FaYoutube, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
+import { Link } from "react-router-dom";
 import Line from "./Line";
 
 function Footer(){
@@ -21,23 +22,24 @@ function Footer(){
                     </div>
                 </div>
                 <div className="quote">
-                    <quote>
+                    <blockquote>
                         "Page Trail is where stories meet readers discover new releases, explore bookish insights. From fresh releases to fun challenges, Page Trail brings the magic of reading to life, one book at a time."
-                    </quote>
+                    </blockquote>
                 </div>
                 <div className="quicklinks">
                     <h3 id="heading">Quick Links</h3>
                     <ul id="ql-list">
-                        <li>About</li> 
-                        <li>Blog</li> 
-                        <li>Books</li> 
-                        <li>Fun</li> 
-                        <li>Privacy Policy</li> 
-                        <li>Terms and Conditions</li> 
+                        <li><Link to="/about" className='ql-list-dec'>About</Link></li>
+                        <li><Link to="/blog" className='ql-list-dec'>Blog</Link></li>
+                        <li><Link to="/books" className='ql-list-dec'>Books</Link></li>
+                        <li><Link to="/fun" className='ql-list-dec'>Fun</Link></li>
+                        <li><Link to="/privacy-policy" className='ql-list-dec'>Privacy Policy</Link></li>
+                        <li><Link to="/terms-and-conditions" className='ql-list-dec'>Terms and Conditions</Link></li>
                     </ul>
                 </div>
             </div>
-            <p id="end-line">&copy;2025 Page Trail | Terms and Conditions | Privacy Policy</p>
+           <p id="end-line">
+            &copy;2025 <Link to="/" className='ql-list-dec'> Page Trail </Link> | <Link to="/terms-and-conditions" className='ql-list-dec'> Terms and Conditions </Link> | <Link to="/privacy-policy" className='ql-list-dec'> Privacy Policy </Link> </p>
         </footer>
     )
 }

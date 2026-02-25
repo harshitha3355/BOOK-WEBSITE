@@ -56,6 +56,12 @@
     gap: 10px;
 }
 
+.ql-list-dec{
+    color: #450920;
+    font-size: 0.9rem;
+    text-decoration:none;
+}
+
 #ql-list :hover{
     font-weight: bold;
     cursor: pointer;

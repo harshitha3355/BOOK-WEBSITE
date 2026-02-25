@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Line from './Line';
 import books from '../data/books';
 import SearchOverlay from './SearchOverlay';
@@ -26,12 +27,11 @@ function Header() {
           <h1 className="site-title">Page Trail</h1>
 
           <nav className="nav">
-            <a href="#home">Home</a>
-            <a href="#books">Books</a>
-            <a href="#blog">Blog</a>
-            <a href="#fun">Fun</a>
-            <a href="#about">About</a>
-
+            <Link to="/" className='nav-opt'>Home</Link>
+            <Link to="/books" className="nav-opt">Books</Link>
+            <Link to="/blog" className="nav-opt">Blog</Link>
+            <Link to="/fun" className="nav-opt">Fun</Link>
+            <Link to="/about" className="nav-opt">About</Link>
             <button onClick={toggleSearch} className="search-icon">
               <FaSearch />
             </button>
