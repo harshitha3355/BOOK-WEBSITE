@@ -6,12 +6,25 @@ import BlogCard from './components/BlogCard';
 import FunCard from './components/FunCard';
 import blogs from './data/blogs';
 import fun from './data/fun';
+import Home from './pages/Home';
+import Books from './pages/Books';
 import Blog from './pages/Blog';
+import Fun from './pages/Fun';
+import About from './pages/About';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Blog/>
+      <main className='main-content'>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/books' element={<Books/>} />
+          <Route path='/blog' element={<Blog/>} />
+          <Route path='/fun' element={<Fun/>} />
+          <Route path='/about' element={<About/>} />
+        </Routes>
+      </main>
     </>
   );
 }
