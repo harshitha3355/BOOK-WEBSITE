@@ -4,6 +4,8 @@ import { FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Line from './Line';
 import books from '../data/books';
+import blogs from '../data/blogs';
+import fun from '../data/fun';
 import SearchOverlay from './SearchOverlay';
 
 function Header() {
@@ -19,6 +21,15 @@ function Header() {
   const filteredBooks = books.filter(book =>
     book.title.toLowerCase().includes(searchTerm.trim().toLowerCase())
   );
+
+  const filteredBlogs = blogs.filter(blog =>
+    blog.title.toLowerCase().includes(searchTerm.trim().toLowerCase())
+  );
+
+  const filteredFun = fun.filter(f =>
+    f.title.toLowerCase().includes(searchTerm.trim().toLowerCase())
+  );
+  console.log(filteredBooks, filteredBlogs, filteredFun);
 
   return (
     <>
@@ -44,7 +55,9 @@ function Header() {
         <SearchOverlay
           searchTerm={searchTerm}
           onChange={handleInputChange}
-          results={filteredBooks}
+          filteredBooks={filteredBooks}
+          filteredFun={filteredFun}
+          filteredBlogs={filteredBlogs}
           onClose={toggleSearch}
         />
       )}
