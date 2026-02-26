@@ -3,6 +3,7 @@ import "./SearchOverlay.css";
 import BookCard from "./BookCard";
 import BlogCard from "./BlogCard";
 import FunCard from "./FunCard";
+import Subtitle from "./Subtitle";
 
 function SearchOverlay({ searchTerm,  onChange,  filteredBooks=[],  filteredBlogs=[],  filteredFun=[],  onClose}) {
   return (
@@ -22,7 +23,7 @@ function SearchOverlay({ searchTerm,  onChange,  filteredBooks=[],  filteredBlog
         <div className="search-results">
           {filteredBooks.length > 0 && (
             <>
-              <h3>Books</h3>
+              <Subtitle heading="Books"/>
               {filteredBooks.map(book => (
                 <BookCard key={book.id} book={book} />
               ))}
@@ -31,7 +32,7 @@ function SearchOverlay({ searchTerm,  onChange,  filteredBooks=[],  filteredBlog
 
           {filteredBlogs.length > 0 && (
             <>
-              <h3>Blogs</h3>
+              <Subtitle heading="Blogs"/>
               {filteredBlogs.map(blog => (
                 <BlogCard key={blog.id} blog={blog} />
               ))}
@@ -40,7 +41,7 @@ function SearchOverlay({ searchTerm,  onChange,  filteredBooks=[],  filteredBlog
 
           {filteredFun.length > 0 && (
             <>
-              <h3>Fun</h3>
+              <Subtitle heading="Books"/>
               {filteredFun.map(f => (
                 <FunCard key={f.id} fun={f} />
               ))}

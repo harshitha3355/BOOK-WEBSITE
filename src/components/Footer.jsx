@@ -11,7 +11,7 @@ function Footer(){
             <Line />
             <div className="foot-container">
                 <div className="title-medialinks">
-                    <h1 className="site-title">Page Trail</h1>
+                    <Link to="/" className="site-title">Page Trail</Link>
                     <div className="media-icons">
                         <FaPinterest size={20}/>
                         <FaYoutube size={20}/>

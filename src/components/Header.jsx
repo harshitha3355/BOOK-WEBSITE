@@ -35,8 +35,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header-container">
-          <h1 className="site-title">Page Trail</h1>
-
+          <Link to="/" className="site-title">Page Trail</Link>
           <nav className="nav">
             <Link to="/" className='nav-opt'>Home</Link>
             <Link to="/books" className="nav-opt">Books</Link>
