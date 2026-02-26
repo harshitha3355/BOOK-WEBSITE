@@ -37,6 +37,24 @@
   overflow-y: auto;
 }
 
+.books-section,
+.blogs-section,
+.fun-section {
+  margin-bottom: 30px;
+}
+
+.blogs-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 15px;
+}
+
+.fun-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  gap: 15px;
+}
+
 .close-btn {
   position: absolute;
   top: 16px;
