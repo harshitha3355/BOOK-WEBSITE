@@ -1,0 +1,51 @@
+.subscribe-box{
+  padding: 10px 20px;
+  border: 0.1em solid #450920;
+  border-radius: 2px;
+  max-width: 400px;
+}
+
+.subscribe-title{
+  font-family: "Economica";
+  color: #450920;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.subscribe-text{
+  font-family: "Fauna One";
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subscribe-form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Fauna One';
+}
+
+.subscribe-form  input{
+  padding: 10px;
+  border: 0.1rem solid #450920;
+  border-radius: 2px;
+}
+
+.subscribe-form button{
+  background: #450920;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: "Economica";
+}
+
+.form-message{
+  margin-top: 10px;
+  font-family: "Economica";
+}
+
+.subscribe-form  ::placeholder{
+  font-family: 'Fauna One';
+}

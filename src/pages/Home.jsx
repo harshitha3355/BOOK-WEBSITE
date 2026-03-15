@@ -10,6 +10,7 @@ import blogs from "../data/blogs";
 import fun from "../data/fun";
 import Line from "../components/Line";
 import BookCard from "../components/BookCard";
+import SubscribeForm from "../components/SubscribeForm";
 import "./Home.css";
 
 function Home() {
@@ -70,8 +71,12 @@ function Home() {
             <img src={author} alt="Author"  id="author-img"/>
             <p id="author-note">Book blogger, reviewer, and proud page turner. I live for witty heroines, unforgettable worlds, and the thrill of finding that one story you can't put down.</p>
           </div>
+          <Subtitle heading={"Quote of The Day"} />
+          <h2 className="quote">“I declare after all there is no enjoyment like reading! How much sooner one tires of any thing than of a book! -- When I have a house of my own, I shall be miserable if I have not an excellent library.”<br/><br/>― Jane Austen, Pride and Prejudice</h2>
+          <SubscribeForm />
         </div>
       </div>
+      <Line/>
       <Footer />
     </>
   );
