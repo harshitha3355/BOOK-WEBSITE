@@ -1,0 +1,69 @@
+.trending-blogs-card {
+  display: grid;
+  grid-template-columns: 20fr 1fr 20fr;
+  width: auto;
+}
+
+
+.blog-card-left {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.blog-img{
+    border: 0.1em solid #450920;
+  border-radius: 2px;
+    height: 300px;
+}
+
+.blog-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-blog {
+  display: flex;
+  gap: 5px;
+  border: 0.1em solid #450920;
+  border-radius: 2px;
+}
+
+.side-blog img {
+  min-width: 50%;
+  height: 150px;
+  object-fit:cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title {
+  font-family: "Economica";
+  color: #450920;
+}
+
+.side-blog .blog-title {
+  font-size: 1.6em;
+}
+.blog-title{
+    font-size: 1.8em;
+}
+
+.blog-author {
+  color: #8a8888;
+  font-size: 1.3rem;
+  font-family: "Economica";
+}
+
+.blog-content {
+  color: #450920;
+  font-family: "Fauna One";
+  max-height: calc(1.3em * 8);
+  line-height: 1.3;
+  overflow: hidden;
+  font-size: 0.8rem;
+  text-align: justify;
+}
