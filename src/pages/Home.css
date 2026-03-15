@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: 22fr 0.5fr 10fr;
   gap: 10px;
+  padding: 10px 0;
 }
 
 .stack-section{
@@ -158,6 +159,7 @@
   border: 0.1rem solid #450920;
   border-radius: 2px;
   cursor: pointer;
+  box-shadow: 0 5px 8px 0 #45092083;
 }
 
 .buy-img.up {

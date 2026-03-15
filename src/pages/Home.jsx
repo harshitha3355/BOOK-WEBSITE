@@ -81,7 +81,7 @@ function Home() {
       <div className="buy-section">
         <div className="buy-details">
           <h2 className="buy-title">Reader's Corner - Recommended Finds</h2>
-          <p className="buy-cont">Books are only part of the reading journey. The right tools and accessories can make reading, studying, and organizing your thoughts much more enjoyable. In this section, you’ll find a curated collection of products for readers and learners—from practical reading essentials to thoughtful gifts for book lovers. These recommendations are selected to enhance your reading experience and support a more comfortable and productive study environment. Some of the links may be affiliate links, which means I may earn a small commission if you choose to purchase through them, at no extra cost to you.</p>
+          <p className="buy-cont">Books are only part of the reading journey. The right tools and accessories can make reading, studying, and organizing your thoughts much more enjoyable. In this section, you’ll find a curated collection of products for readers and learners—from practical reading essentials to thoughtful gifts for book lovers. Some of the links may be affiliate links, which means I may earn a small commission if you choose to purchase through them, at no extra cost to you.</p>
           <Link to="/buy" className="link"><button className="exp-btn">Explore More</button> </Link>
         </div>
         <div className="buy-items">

@@ -21,7 +21,7 @@ function Footer(){
                         <FaFacebook size={20}/>
                     </div>
                 </div>
-                <div className="quote">
+                <div className="ft-quote">
                     <blockquote>
                         "Page Trail is where stories meet readers discover new releases, explore bookish insights. From fresh releases to fun challenges, Page Trail brings the magic of reading to life, one book at a time."
                     </blockquote>

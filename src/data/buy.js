@@ -7,7 +7,7 @@ const buy = [
     image: "https://i.pinimg.com/736x/c0/8d/8d/c08d8df5b1bf50fa4e9c713d1b53b852.jpg",
     category: "Reading Essentials",
     rating: 4.7,
-    link: "https://amzn.to/example1"
+    link: "https://a.co/d/08kUqNFB"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const buy = [
     image: "https://i.pinimg.com/736x/00/48/38/0048383cca6b3f4cd54d4859c2492295.jpg",
     category: "Reading Accessories",
     rating: 4.5,
-    link: "https://amzn.to/example2"
+    link: "https://amzn.in/d/07y1QJK7"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const buy = [
     image: "https://i.pinimg.com/736x/61/52/74/61527473871fc4c72f4e5edd39092a6e.jpg",
     category: "Study Tools",
     rating: 4.4,
-    link: "https://amzn.to/example3"
+    link: "https://amzn.in/d/07y1QJK7"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const buy = [
     image: "https://i.pinimg.com/1200x/25/ce/c5/25cec50015f0dca749db892ee9506852.jpg",
     category: "Reading Accessories",
     rating: 4.6,
-    link: "https://amzn.to/example4"
+    link: "https://amzn.in/d/0gi6SjZL"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const buy = [
     image: "https://i.pinimg.com/1200x/08/36/64/08366482a3c0a912cac61fc9e962319f.jpg",
     category: "Study Tools",
     rating: 4.5,
-    link: "https://amzn.to/example5"
+    link: "https://amzn.in/d/0gi6SjZL"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const buy = [
     image: "https://i.pinimg.com/736x/f3/53/6d/f3536d0ed23ad124e34bec1340b84c2c.jpg",
     category: "Book Lover Gifts",
     rating: 4.3,
-    link: "https://amzn.to/example6"
+    link: "https://amzn.in/d/0gi6SjZL"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const buy = [
     image: "https://i.pinimg.com/avif/1200x/7e/cb/20/7ecb20260ddcefb844e11e9b607e4159.avf",
     category: "Study Tools",
     rating: 4.4,
-    link: "https://amzn.to/example7"
+    link: "https://amzn.in/d/0gi6SjZL"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const buy = [
     image: "https://i.pinimg.com/736x/c0/4e/8f/c04e8f90212d1ed5ad220748c7df11af.jpg",
     category: "Reading Comfort",
     rating: 4.2,
-    link: "https://amzn.to/example8"
+    link: "https://amzn.in/d/06jcTtSc"
   }
 ];
 

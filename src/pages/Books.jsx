@@ -84,15 +84,15 @@ function Books() {
       <Line/>
       <h2 className="book-subtitle">All Categories</h2>
       <Line/>
+      <Subtitle heading="Top Recommendations" />
       <div className="recommendations-section">
-        <Subtitle heading="Top Recommendations" />
         {topRecommendations.map((book) => (
         <BookCard key={book.id} book={book} />
         ))}
       </div>
 
+      <Subtitle heading="All Books" />
       <div className="all-books-section">
-        <Subtitle heading="All Books" />
         {books.map((book) => (
         <BookCard key={book.id} book={book} />
         ))}
