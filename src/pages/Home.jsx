@@ -90,6 +90,7 @@ function Home() {
               key={item.id}
               href={item.link}
               className={`buy-img ${index % 2 === 0 ? "up" : "down"}`}
+              target="_blank"
             >
               <img src={item.image} alt="product" />
             </a>

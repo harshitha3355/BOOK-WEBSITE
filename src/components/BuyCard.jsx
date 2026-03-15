@@ -10,7 +10,7 @@ function BuyCard({ buy }) {
         <p className='buy-desc'>{buy.description}</p>
         <h1 className='buy-price'>{buy.price}</h1>
         <p className='rating'>Rating: {buy.rating}</p>
-        <a href={buy.link}><button className='buy-btn'> Buy Now</button></a> 
+        <a href={buy.link} target="_blank"><button className='buy-btn'> Buy Now</button></a> 
       </div>
     </div>
   );
