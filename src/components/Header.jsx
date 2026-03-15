@@ -42,6 +42,7 @@ function Header() {
             <Link to="/blog" className="nav-opt">Blog</Link>
             <Link to="/fun" className="nav-opt">Fun</Link>
             <Link to="/about" className="nav-opt">About</Link>
+            <Link to="/buy" className="nav-opt">Buy</Link>
             <button onClick={toggleSearch} className="search-icon">
               <FaSearch />
             </button>

@@ -110,3 +110,60 @@
   border-radius: 2px;
   padding: 20px;
 }
+
+.buy-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.buy-details{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buy-title{
+  font-family: 'Economica';
+  font-size: 1.8em;
+  color: #450920;
+  text-align: center;
+}
+
+.buy-cont{
+  font-size: 0.75em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.exp-btn{
+  font-family: 'Economica';
+  font-size: 1.5em;
+  padding: 10px 20px;
+  color: white;
+  background-color: #450920;
+  border-radius: 2px;
+}
+
+.buy-items {
+  display: flex;
+  gap: 20px;
+}
+
+.buy-img img {
+  width: 200px;
+  height: 260px;
+  border: 0.1rem solid #450920;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.buy-img.up {
+  margin-top: -20px;
+}
+
+.buy-img.down {
+  margin-top: 20px;
+}

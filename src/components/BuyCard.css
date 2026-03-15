@@ -1,0 +1,54 @@
+.buy-card {
+  display: flex;
+  gap: 20px;
+  border: 0.1rem solid #450920;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.buy-img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.buy-name {
+  font-size: 1.8em;
+  font-family: "Economica";
+  color: #450920;
+}
+
+.buy-categ{
+  color: #8a8888;
+  font-size: 1.2em;
+  font-family: "Economica";
+}
+
+.buy-desc{
+    color: #450920;
+    font-family: 'Fauna One';
+    font-size: 0.75em;
+}
+
+.buy-price{
+    color: #450920;
+    font-family: 'Fauna One';
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.rating{
+    color: #450920;
+    font-family: 'Fauna One';
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.buy-btn{
+    background-color: #450920;
+    color: white;
+    font-family: 'Economica';
+    font-size: 1.5em;
+    padding: 5px 15px;
+    border-radius: 2px;
+}
