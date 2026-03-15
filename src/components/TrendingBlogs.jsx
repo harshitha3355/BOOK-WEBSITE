@@ -7,25 +7,25 @@ function TrendingBlogs({ blogs }) {
   return (
     <div className="trending-blogs-card">
       {/* LEFT FEATURE BLOG */}
-      <div className="blog-card-left">
-        <img src={featuredBlog.image} alt={featuredBlog.title} className="blog-img" />
+      <div className="bg-card-left">
+        <img src={featuredBlog.image} alt={featuredBlog.title} className="bg-img" />
         <div className="details">
-          <h2 className="blog-title">{featuredBlog.title}</h2>
-          <h2 className="blog-author">by {featuredBlog.author}</h2>
-          <p className="blog-content-left">
+          <h2 className="bg-title">{featuredBlog.title}</h2>
+          <h2 className="bg-author">by {featuredBlog.author}</h2>
+          <p className="bg-content-left">
             {featuredBlog.content}
           </p>
         </div>
       </div>
       <Line/>
       {/* RIGHT BLOG LIST */}
-      <div className="blog-card-right">
+      <div className="bg-card-right">
         {sideBlogs.map((blog) => (
           <div className="side-blog" key={blog.id}>
             <img src={blog.image} alt={blog.title} />
             <div className="details-right">
-              <h2 className="blog-title">{blog.title}</h2>
-              <h2 className="blog-author">by {blog.author}</h2>
+              <h2 className="bg-title">{blog.title}</h2>
+              <h2 className="bg-author">by {blog.author}</h2>
             </div>
           </div>
         ))}

@@ -7,9 +7,9 @@ import Subtitle from "../components/Subtitle";
 import TrendingBlogs from "../components/TrendingBlogs";
 import books from "../data/books";
 import blogs from "../data/blogs";
+import fun from "../data/fun";
 import Line from "../components/Line";
 import BookCard from "../components/BookCard";
-import BlogCard from "../components/BlogCard";
 import "./Home.css";
 
 function Home() {
@@ -19,12 +19,12 @@ function Home() {
     <>
       <Header />
       <div className="home">
-        <section className="trending-section">
+        <div className="trending-section">
           <Subtitle heading={"Trending Blogs"} />
           <TrendingBlogs blogs={newsBlogs} />
-        </section>
+        </div>
         <Line />
-        <section className="new-releases">
+        <div className="new-releases">
           <Subtitle heading={"New Releases"} />
           <div className="books-grid">
             {books.slice(0, 24).map((book) => (
@@ -34,11 +34,11 @@ function Home() {
           <Link to="/books" className="link">
             <h2 className="view-more">View more</h2>
           </Link>
-        </section>
+        </div>
       </div>
       <div className="two-sections">
         <div className="left-section">
-          <section className="stacks">
+          <div className="stacks">
             <Subtitle heading={"Stacks"} />
             <div className="stack-section">
               {stackBlogs.slice(0, 6).map((blog) => (
@@ -51,18 +51,25 @@ function Home() {
             <Link to="/blog" className="link">
             <h2 className="view-more">View more</h2>
           </Link>
-          </section>
+          </div>
           <Line/>
-          <section className="pageplay">
+          <div className="pageplay">
             <Subtitle heading={"Page Play"} />
-          </section>
+              {fun.slice(0,5).map((f)=>(
+                <div key={f.id} className="pageplay-cont">
+                  <img src={f.image} alt={f.title} className="pp-img" />
+                  <h2 className="pp-title">{f.title}</h2>
+                  <h2 className="pp-btntxt">{f.buttonText}</h2>
+                </div>
+              ))}
+          </div>
         </div>
         <Line />
         <div className="right-section">
-          <section className="abt-author">
+          <div className="abt-author">
             <img src={author} alt="Author"  id="author-img"/>
             <p id="author-note">Book blogger, reviewer, and proud page turner. I live for witty heroines, unforgettable worlds, and the thrill of finding that one story you can't put down.</p>
-          </section>
+          </div>
         </div>
       </div>
       <Footer />
