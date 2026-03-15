@@ -1,14 +1,7 @@
-.book-disp{
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  row-gap: 18px;
-  margin: 0 5px ;
-}
-
 .book-card {
   width: 150px;
   text-align: center;
-  line-height: 5px;
+  line-height: 2px;
 }
 
 .book-img {
@@ -16,6 +9,7 @@
   height: 230px;
   border-radius: 2px;
   border: 2px solid #450920;
+  object-fit: cover;
 }
 
 .book-title {
@@ -27,6 +21,6 @@
 
 .book-author {
   color: #8a8888;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: 'Economica';
 }

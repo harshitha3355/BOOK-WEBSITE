@@ -1,0 +1,20 @@
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.view-more {
+  background: linear-gradient(to top, rgba(69, 9, 32, 0.4),  rgba(247, 245, 245, 0));
+  text-align: center;
+  font-family: 'Economica';
+  padding: 20px;
+  margin-top: -30px;
+  text-decoration:none;
+  color: #450920;
+}
+
+.link{
+    text-decoration: none;
+}
