@@ -12,7 +12,7 @@ function TrendingBlogs({ blogs }) {
         <div className="details">
           <h2 className="blog-title">{featuredBlog.title}</h2>
           <h2 className="blog-author">by {featuredBlog.author}</h2>
-          <p className="blog-content">
+          <p className="blog-content-left">
             {featuredBlog.content}
           </p>
         </div>

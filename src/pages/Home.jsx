@@ -1,4 +1,5 @@
 import React from "react";
+import author from "../assets/author.png";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -47,11 +48,21 @@ function Home() {
                 </div>
               ))}
             </div>
+            <Link to="/blog" className="link">
+            <h2 className="view-more">View more</h2>
+          </Link>
+          </section>
+          <Line/>
+          <section className="pageplay">
+            <Subtitle heading={"Page Play"} />
           </section>
         </div>
         <Line />
         <div className="right-section">
-          
+          <section className="abt-author">
+            <img src={author} alt="Author"  id="author-img"/>
+            <p id="author-note">Book blogger, reviewer, and proud page turner. I live for witty heroines, unforgettable worlds, and the thrill of finding that one story you can't put down.</p>
+          </section>
         </div>
       </div>
       <Footer />
