@@ -7,13 +7,12 @@ import blogs from '../data/blogs';
 import './Blog.css';
 
 function Blog(){
-    const newsBlogs = blogs.filter(blog => blog.type === 'news');
     return(
         <>
             <Header/>
             <Subtitle heading={'Blogs'}/>
             <div className="blog-section">
-                {newsBlogs.map((bl) => (
+                {blogs.map((bl) => (
                     <BlogCard key={bl.id} blog={bl} />
                 ))}
             </div>

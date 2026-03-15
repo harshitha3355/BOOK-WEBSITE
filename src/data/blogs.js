@@ -204,7 +204,7 @@ const blogs = [
     title: "32 Books with Magic & Mythology That Will Absolutely Captivate You",
     author: "Samantha Lee",
     image:
-      "https://i.pinimg.com/736x/2a/34/5b/2a345b1e8f0c8b12d4e5c6d7890abcde.jpg",
+      "https://i.pinimg.com/avif/1200x/a1/00/ce/a100ce17fcc81ff50a08d3ed21da5b8e.avf",
     type: "stack",
     content: [
       {
@@ -256,7 +256,7 @@ const blogs = [
     title: "18 Books With Dual Timelines That Readers Absolutely Love",
     author: "Michael Chen",
     image:
-      "https://i.pinimg.com/736x/3b/45/6c/3b456c7d8e9f0a1b2c3d4e5f6a7b8c9d.jpg",
+      "https://i.pinimg.com/736x/de/af/b1/deafb182ebe456adf8e01d4ea8d8d5f9.jpg",
     type: "stack",
     content: [
       {
@@ -308,7 +308,7 @@ const blogs = [
     title: "15 Enemies to Lovers Books You Won't Be Able to Put Down",
     author: "Jessica Taylor",
     image:
-      "https://i.pinimg.com/736x/4c/56/7d/4c567d8e9f0a1b2c3d4e5f6a7b8c9d0e.jpg",
+      "https://i.pinimg.com/736x/f9/d2/a5/f9d2a5c67d096d651d8a5c8f935e9fc1.jpg",
     type: "stack",
     content: [
       {
@@ -360,7 +360,7 @@ const blogs = [
     title: "8 Dark Academia Trope Reads for Your Gothic Bookshelf",
     author: "Oliver Blackwood",
     image:
-      "https://i.pinimg.com/736x/5d/67/8e/5d678e9f0a1b2c3d4e5f6a7b8c9d0e1f.jpg",
+      "https://i.pinimg.com/736x/48/94/99/489499c9699d298eaf92744a4df60923.jpg",
     type: "stack",
     content: [
       {
@@ -412,7 +412,7 @@ const blogs = [
     title: "6 Books for This Summer: Your Perfect Beach Reads",
     author: "Sophia Martinez",
     image:
-      "https://i.pinimg.com/736x/6e/78/9f/6e789f0a1b2c3d4e5f6a7b8c9d0e1f2g.jpg",
+      "https://i.pinimg.com/736x/93/02/6f/93026f12d1315c3038f2dd2296915ecf.jpg",
     type: "stack",
     content: [
       {
@@ -464,7 +464,7 @@ const blogs = [
     title: "The Rise of Cozy Mysteries in Modern Literature",
     author: "Eleanor Vance",
     image:
-      "https://i.pinimg.com/736x/7f/89/a0/7f89a0b1c2d3e4f5a6b7c8d9e0f1a2b3.jpg",
+      "https://i.pinimg.com/736x/2f/95/6e/2f956ea4bd775d675e29d36e8533365a.jpg",
     type: "news",
     content:
       "Cozy mysteries have seen a resurgence in popularity, offering readers gentle suspense without graphic violence. These stories typically feature amateur detectives in small communities, with themes of community, friendship, and justice prevailing over darkness.",
@@ -474,7 +474,7 @@ const blogs = [
     title: "10 Fantasy Series to Binge Read This Winter",
     author: "Leo Grayson",
     image:
-      "https://i.pinimg.com/736x/8a/9b/ac/8a9bac1d2e3f4a5b6c7d8e9f0a1b2c3d.jpg",
+      "https://i.pinimg.com/avif/736x/44/56/23/445623f1face467773a4c1ce1fb4cfe2.avf",
     type: "stack",
     content: [
       {
