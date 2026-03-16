@@ -6,6 +6,7 @@ import Fun from './pages/Fun';
 import About from './pages/About';
 import Buy from './pages/Buy';
 import BlogPost from './pages/BlogPost';
+import BookPost from './pages/BookPost';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import {Routes, Route} from 'react-router-dom';
@@ -18,6 +19,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/books' element={<Books/>} />
           <Route path='/blog' element={<Blog/>} />
+          <Route path="/books/:id" element={<BookPost />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path='/fun' element={<Fun/>} />
           <Route path='/buy' element={<Buy/>} />

@@ -41,7 +41,6 @@ function BlogPost() {
     </div>
     <Footer/>
     </>
-
   );
 }
 
