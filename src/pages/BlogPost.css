@@ -1,0 +1,39 @@
+.blog-post-container {
+  width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-post-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #450920;
+  font-family: "Economica";
+}
+
+.blog-post-meta {
+  color: #8a8888;
+  font-size: 1.5em;
+  font-family: "Economica";
+  margin: 25px 0;
+  font-weight: 550;
+}
+
+.blog-post-image {
+  width: 600px;
+  height: 400px;
+  border: 0.1em solid #450920;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.blog-post-content {
+  color: #450920;
+  font-family: "Fauna One";
+  line-height: 1.3em;
+  overflow: hidden;
+  font-size: 0.9em;
+  margin: 30px 50px;
+}

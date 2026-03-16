@@ -1,10 +1,11 @@
 import './BlogCard.css';
+import { Link } from "react-router-dom";
 
 function BlogCard({ blog }) {
   console.log('Blog content:', blog.content); // Check what this actually is
   
   return (
-    <div className="blog-card">
+    <Link to={`/blog/${blog.id}`} className="blog-card">
       <img src={blog.image} alt={blog.title} className="blog-img" />
       <div className='details'>
         <h2 className="blog-title">{blog.title}</h2>
@@ -15,7 +16,7 @@ function BlogCard({ blog }) {
             : JSON.stringify(blog.content)}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
