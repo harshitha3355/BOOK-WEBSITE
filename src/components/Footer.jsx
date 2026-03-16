@@ -30,6 +30,7 @@ function Footer(){
                     <h3 id="heading">Quick Links</h3>
                     <ul id="ql-list">
                         <li><Link to="/about" className='ql-list-dec'>About</Link></li>
+                        <li><Link to="/buy" className='ql-list-dec'>Buy</Link></li>
                         <li><Link to="/blog" className='ql-list-dec'>Blog</Link></li>
                         <li><Link to="/books" className='ql-list-dec'>Books</Link></li>
                         <li><Link to="/fun" className='ql-list-dec'>Fun</Link></li>
