@@ -21,8 +21,8 @@ function BookPost() {
       </div>
       <Line />
       <Subtitle heading={"Recommended"} />
-      <div className="blog-section">
-        {blogs.slice(4, 8).map((bl) => (
+      <div className="book-section">
+        {books.slice(4, 8).map((bl) => (
           <BookCard key={bl.id} blog={bl} />
         ))}
       </div>
