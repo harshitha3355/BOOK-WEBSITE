@@ -12,7 +12,7 @@ function Books() {
 
   // Extract categories
   const categories = [
-    "All",
+    "All Books",
     ...new Set(books.flatMap((book) => book.categories || [])),
   ];
 
