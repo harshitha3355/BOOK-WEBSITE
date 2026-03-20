@@ -1,0 +1,68 @@
+.book-section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.book-post-container {
+  color: #450920;
+  display: flex;
+}
+
+.bkp-left {
+  font-family: "Economica";
+  font-size: 1.5em;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bkp-img {
+  width: 250px;
+  height: 430px;
+  border-radius: 2px;
+  border: 2px solid #450920;
+  object-fit: cover;
+}
+
+.bkp-right {
+  font-family: "Economica";
+  width: 90%;
+  padding: 0 30px;
+}
+
+.bkp-title {
+  font-size: 1.8em;
+}
+
+.bkp-author{
+    color: #8a8888;
+  font-size: 1.2rem;
+}
+
+.bkp-quote{
+    background-color: #450920;
+    color: white;
+    padding: 30px;
+    font-family: 'Fauna One';
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.pdf-btn{
+    background-color: #450920;
+    color: white;
+    font-family: 'Economica';
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 2px;
+    margin: 10px 0;
+}
+
+.bkp-desc{
+    font-family: 'Fauna One';
+    font-size: 1em;
+    text-align: justify;
+}
