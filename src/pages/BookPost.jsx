@@ -1,3 +1,4 @@
+import pagetrail from '../assets/pagetrail.pdf'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Line from "../components/Line";
@@ -20,7 +21,7 @@ function BookPost() {
         <div className="bkp-left">
           <img src={book.url} alt={book.title} className="bkp-img" /><br/>
           <button
-            onClick={() => window.open(book.pdfUrl, "_blank")}
+            onClick={() => window.open(pagetrail, "_blank")}
             className="pdf-btn"
           >
             View PDF
