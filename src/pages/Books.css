@@ -1,11 +1,11 @@
 .book-subtitle {
-  margin: 5px;
+  margin: 15px 0;
   font-family: "Economica";
   font-size: 2em;
   color: #450920;
   border: 0.1rem solid #450920;
   border-radius: 2px;
-  padding: 5px;
+  padding: 4px;
 }
 
 .recommendations-section {
@@ -20,4 +20,15 @@
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   margin-top: 30px;
+}
+
+button{
+  background-color: #450920;
+  color: white;
+  padding: 15px 10px;
+  margin: 3px;
+  border: 0.1em solid #450920;
+  border-radius: 2px;
+  font-family: 'Economica';
+  font-size: 1em;
 }

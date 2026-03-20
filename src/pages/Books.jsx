@@ -8,96 +8,60 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Books() {
-  const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedAuthor, setSelectedAuthor] = useState("");
-  const [selectedGenre, setSelectedGenre] = useState("");
-  const [selectedBinding, setSelectedBinding] = useState("");
-  const [selectedMood, setSelectedMood] = useState("");
-  const [showFilters, setShowFilters] = useState(false);
 
-  // Get unique values for filters
+  // Extract categories
   const categories = [
     "All",
     ...new Set(books.flatMap((book) => book.categories || [])),
   ];
-  const authors = ["All", ...new Set(books.map((book) => book.author))];
-  const genres = [
-    "All",
-    ...new Set(books.map((book) => book.genre).filter(Boolean)),
-  ];
-  const bindings = [
-    "All",
-    ...new Set(books.flatMap((book) => book.binding || [])),
-  ];
-  const moodThemes = [
-    "All",
-    ...new Set(books.flatMap((book) => book.moodThemes || [])),
-  ];
 
-  // Get top recommendations
+  // Filter books based on selected category
+  const filteredBooks =
+    selectedCategory === "All Books"
+      ? books
+      : books.filter(
+          (book) =>
+            book.categories &&
+            book.categories.includes(selectedCategory)
+        );
+
   const topRecommendations = books
     .filter((book) => book.isRecommended)
     .sort((a, b) => b.recommendationScore - a.recommendationScore)
-    .slice(0, 5);
-
-  // Filter books based on all selected criteria
-  const filteredBooks = books.filter((book) => {
-    const matchesSearch =
-      searchTerm === "" ||
-      book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      book.author.toLowerCase().includes(searchTerm.toLowerCase());
-
-    const matchesCategory =
-      selectedCategory === "All" ||
-      (book.categories && book.categories.includes(selectedCategory));
-
-    const matchesAuthor =
-      selectedAuthor === "All" || book.author === selectedAuthor;
-
-    const matchesGenre =
-      selectedGenre === "All" || book.genre === selectedGenre;
-
-    const matchesBinding =
-      selectedBinding === "All" ||
-      (book.binding && book.binding.includes(selectedBinding));
-
-    const matchesMood =
-      selectedMood === "All" ||
-      (book.moodThemes && book.moodThemes.includes(selectedMood));
-
-    return (
-      matchesSearch &&
-      matchesCategory &&
-      matchesAuthor &&
-      matchesGenre &&
-      matchesBinding &&
-      matchesMood
-    );
-  });
+    .slice(0, 8);
 
   return (
     <>
       <Header />
-      <Subtitle heading="Books" />
-      <h2 className="book-subtitle">Book Filter</h2>
-      <Line/>
       <h2 className="book-subtitle">All Categories</h2>
-      <Line/>
+      <div className="category-list">
+        {categories.map((cat, index) => (
+          <button
+            key={index}
+            className={`category-btn ${
+              selectedCategory === cat ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+      <Line />
+      <Subtitle heading={selectedCategory} />
+      <div className="all-books-section">
+        {filteredBooks.map((book) => (
+          <BookCard key={book.id} book={book} />
+        ))}
+      </div>
       <Subtitle heading="Top Recommendations" />
       <div className="recommendations-section">
         {topRecommendations.map((book) => (
-        <BookCard key={book.id} book={book} />
+          <BookCard key={book.id} book={book} />
         ))}
       </div>
-
-      <Subtitle heading="All Books" />
-      <div className="all-books-section">
-        {books.map((book) => (
-        <BookCard key={book.id} book={book} />
-        ))}
-      </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
